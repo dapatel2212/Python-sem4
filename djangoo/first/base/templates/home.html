@@ -1,0 +1,9 @@
+{% extends 'base.html'%}
+{% block content %}
+    <p>This is home page</p>
+        {% for i in data %}
+    <ul>
+        <li>{{i.Rollno}}-{{i.Name}}</li>
+    </ul>
+{% endfor %}
+{% endblock %}
